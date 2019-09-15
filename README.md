@@ -1,2 +1,13 @@
 # op-index-vue
-基于 op-platform 的 主页项目
+## 安装依赖
+```
+npm install
+```
+## 运行
+```
+npm run dev
+```
+## 打包
+```
+npm run build
+```

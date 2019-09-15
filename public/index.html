@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>op-platform</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but op-platform doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+        function placeholderPic(){
+            // 根据当前屏幕宽度设置页面 font-size
+            document.documentElement.style.fontSize=document.documentElement.offsetWidth/15.36+"px"; //同上
+        }
+        placeholderPic();
+        window.onresize=function(){  // 解决窗口缩放时需要手动刷新页面
+            placeholderPic();
+        }
+    </script>
+  </body>
+</html>
