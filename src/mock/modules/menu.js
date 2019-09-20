@@ -50,7 +50,9 @@ function getList() {
     return {
         url: '/menu/list', // 拦截路径
         method: 'get', // 请求方法
-        data: data // 响应数据
+        response: config => {
+            return data // 响应数据
+        }
     }
 }
 
